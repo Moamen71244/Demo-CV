@@ -4,48 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <style>
-      th,
-      td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 5px;
-      }
-    </style>
   </head>
   <body>
     <h1 style="text-align: center; color: #1b6a9f">Moamen Ahmed Portfolio</h1>
     <p style="text-align: center; color: #1b6a9f">Full stack developer</p>
     <h2 style="color: #1b6a9f">About Me</h2>
-    <table style="margin: auto; width: 90%; border: none">
+    <table>
       <tr>
         <td style="align-content: start; border: none" rowspan="2" width="350">
           <img src="./images/photo.avif" width="200" alt="my pohto" />
           <br />
           <img
-            src="./images/fb.png"
+            src="./images/facebook.png"
             style="border-radius: 50%"
             width="50"
-            alt="facebook pohto"
-          />
+            alt="facebook pohto" />
           <img
             src="./images/instagram.png"
             style="border-radius: 50%"
             width="50"
-            alt="instagram pohto"
-          />
+            alt="instagram pohto" />
           <img
-            src="./images/twitter.png"
+            src="./images/github.png"
             style="border-radius: 50%"
             width="50"
-            alt="twitter pohto"
-          />
+            alt="github pohto" />
           <img
             src="./images/linkedin.png"
             style="border-radius: 50%"
             width="50"
-            alt="linkedin pohto"
-          />
+            alt="linkedin pohto" />
         </td>
         <td style="align-content: start; border: none">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque alias
@@ -57,34 +45,25 @@
           <br />
           quisquam aut. Sapiente autem magni culpa aliquam. Facilis, architecto
           obcaecati animi quod aspernatur natuseum voluptas.
-        </td>
-      </tr>
-      <tr>
-        <td style="border: none">
+          <br /><br />
+
+          <h2 style="background-color: #6fbef2">Skills</h2>
           <ul>
-            <dt style="background-color: rgb(161, 245, 245)"><b>Skills</b></dt>
-            <br />
-            <dd><a href>html</a></dd>
-            <dd><a href>CSS</a></dd>
-            <dd><a href>JS</a></dd>
-            <dd><a href>My SQL</a></dd>
-            <dd><a href>PHP</a></dd>
-            <dd><a href>Laravel</a></dd>
+            <li><a href="#">html</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JS</a></li>
+            <li><a href="#">My SQL</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Laravel</a></li>
           </ul>
         </td>
       </tr>
     </table>
     <h2 style="color: #1b6a9f">Experinece Timeline</h2>
-   
+
     <p style="text-align: center">Profisional Experinece Overview</p>
-    <table
-      style="
-        width: 90%;
-        margin: auto;
-        border: 1px solid black;
-        border-collapse: collapse;
-      "
-    >
+
+    <table border="1" width="100%" style="border-collapse: collapse">
       <thead>
         <tr style="background-color: #1b6a9f">
           <th>Company</th>
@@ -98,7 +77,10 @@
         <tr>
           <td rowspan="2">techCrop Solution</td>
           <td rowspan="2">
-            <img style="width: 200px" src="./images/three.jpg" alt="techCrop logo" />
+            <img
+              style="width: 150px"
+              src="./images/three.jpg"
+              alt="techCrop logo" />
           </td>
           <td>senior Full stack developer</td>
           <td>
@@ -123,7 +105,12 @@
         </tr>
         <tr>
           <td>digital agency pro</td>
-          <td><img style="width: 200px" src="./images/one.jpg" alt="digital agency logo" /></td>
+          <td>
+            <img
+              style="width: 150px"
+              src="./images/one.jpg"
+              alt="digital agency logo" />
+          </td>
           <td>Frontend developer</td>
           <td>
             <ul>
@@ -136,7 +123,12 @@
         </tr>
         <tr>
           <td>wb design studio</td>
-          <td><img style="width: 200px" src="./images/two.jpg" alt="wb design logo" /></td>
+          <td>
+            <img
+              style="width: 150px"
+              src="./images/two.jpg"
+              alt="wb design logo" />
+          </td>
           <td>junior web developer</td>
           <td>
             <ul>
@@ -154,69 +146,138 @@
         </td>
       </tfoot>
     </table>
-    <br>
+    <br />
     <h2 style="color: #1b6a9f">Contact Me</h2>
     <p>feel free to reash out to me using form below</p>
-   <fieldset style="width: 90%;margin: auto;">
-    <legend>Personal Information</legend>
-  
-        <table style="width: 70%; margin: auto;">
+    <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <table width="50%">
+        <tr>
+          <td style="border: none">
+            <label for="first_name">first name *</label>
+          </td>
+          <td style="border: none">
+            <input type="text" name="first_name" id="first_name" />
+          </td>
+
+          <td style="border: none">
+            <label for="last_name">last name *</label>
+          </td>
+          <td style="border: none">
+            <input type="text" name="last_name" id="last_name" />
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none">
+            <label for="email">email address*</label>
+          </td>
+          <td style="border: none">
+            <input type="email" id="email" name="email" />
+          </td>
+          <td style="border: none">
+            <label for="phone">phone number *</label>
+          </td>
+          <td style="border: none">
+            <input type="text" id="phone" name="phone" />
+          </td>
+        </tr>
+        <tr>
+          <td style="border: none">
+            <label for="Mdate">meeting date *</label>
+          </td>
+          <td style="border: none">
+            <input type="date" id="Mdate" name="date" />
+          </td>
+          <td style="border: none">
+            <label for="time">best time to Contact</label>
+          </td>
+          <td style="border: none">
+            <input type="time" id="time" name="time" />
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <br /><br />
+
+      <fieldset>
+        <legend>Project details</legend>
+        <table width="50%">
           <tr>
-            <td  style="border: none;"><label for="">first name *</label></td>
-            <td style="border: none;"> <input type="text" /></td>
-            <td style="border: none;"><label for="">last name *</label></td>
-            <td style="border: none;"> <input type="text" /></td>
+            <td style="border: none">
+              <label for="Ptype">Project type *</label>
+            </td>
+            <td style="border: none">
+              <input type="text" id="Ptype" name="ProjectType" />
+            </td>
+            <td style="border: none">
+              <label for="Pdesc">project description </label>
+            </td>
+            <td style="border: none">
+              <textarea name="ProjectDesc" id="Pdesc"></textarea>
+            </td>
           </tr>
           <tr>
-            <td style="border: none;"><label for="">email address*</label></td>
-            <td style="border: none;"><input type="email" /></td>
-            <td style="border: none;"><label for="">phone number *</label></td>
-            <td style="border: none;"><input type="text" /></td>
+            <td colspan="2" style="border: none">
+              <h2>Budget Range</h2>
+              <ul style="list-style-type: none">
+                <li><input type="radio" name="Range" value="-5,000$" />Under
+                  5000$</li>
+                <li><input type="radio" name="Range"
+                    value="5,000->10,000" />5000$ - 10000$</li>
+                <li><input type="radio" name="Range"
+                    value="10,000->25,000" />10000$ - 25000$</li>
+                <li><input type="radio" name="Range" value="+25,000" />over
+                  25000$</li>
+              </ul>
+            </td>
+            <td colspan="2" style="border: none">
+              <h2>Services Required</h2>
+              <ul style="list-style-type: none">
+                <li><input type="checkbox" name="Services"
+                    value="UI/UX" />UI/UX</li>
+                <li>
+                  <input type="checkbox" name="Services"
+                    value="Frontend" />Frontend development
+                </li>
+                <li>
+                  <input type="checkbox" name="Services"
+                    value="backend" />backend development
+                </li>
+                <li>
+                  <input type="checkbox" name="Services"
+                    value="Hoisting & deployment" />Hoisting & deployment
+                </li>
+                <li>
+                  <input type="checkbox" name="Services"
+                    value="Maintaince & Support" />Maintaince & Support
+                </li>
+              </ul>
+            </td>
           </tr>
           <tr>
-              <td style="border: none;"><label for="">meeting date *</label></td>
-              <td style="border: none;"> <input type="date" /></td>
-            <td style="border: none;"><label for="">best time to Contact</label></td>
-            <td style="border: none;"> <input type="datetime" /></td>
+            <td colspan="4">
+              <label for="HOM">How you hear about me?</label>
+              <select name="Hearing-about-me" id="HOM">
+                <optgroup>
+                  <option value disabled selected>Select Source</option>
+                  <option value="Social Media">Social Media</option>
+                  <option value="Linked IN">Linked IN</option>
+                </optgroup>
+              </select>
+            </td>
           </tr>
         </table>
-   </fieldset>
-   <br><br>
-   <fieldset style="width: 90%; margin: auto;">
-    <legend>Project details</legend>
-     <table>
-        <tr>
-            <td style="border: none;"><label for="">Project type *</label></td>
-            <td style="border: none;"><input type="text" /></td>
-            <td  style="border: none;"><label for="">project description </label> </td>
-            <td style="border: none;"> <textarea name="" id=""></textarea> </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="border: none;">
-                <h2>Budget Range</h2>
-                <ul style="list-style-type: none;">
-                    <li><input type="radio">Under 5000$</li>
-                    <li><input type="radio">5000$ - 10000$</li>
-                    <li><input type="radio">10000$ - 25000$</li>
-                    <li><input type="radio">over 25000$</li>
-                </ul>
-            </td>
-            <td colspan="2" style="border: none;">
-                <h2>Services Required</h2>
-                <ul style="list-style-type: none;">
-                    <li><input type="checkbox">UI/UX</li>
-                    <li><input type="checkbox">Frontend development</li>
-                    <li><input type="checkbox">backend development</li>
-                    <li><input type="checkbox">Hoisting & deployment</li>
-                    <li><input type="checkbox">Maintaince & Support</li>
-                </ul>
-            </td>
-        </tr>
-     </table>
-   </fieldset>
-   <br><br>
-   <button style="background-color:dodgerblue;color: aliceblue;margin-left: 20px;">Send Message</button>
-   <button style="background-color: red;color: aliceblue;">Clear Form</button>
+      </fieldset>
+      <br /><br />
+      <input type="submit"
+        style="background-color: dodgerblue; color: aliceblue;"
+        value="submit" />
+      <input type="submit"
+        style="background-color: rgb(201, 33, 33); color: aliceblue;"
+        value="Reset" />
+
+    </form>
   </body>
 </html>
-
